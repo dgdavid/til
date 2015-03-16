@@ -5,5 +5,6 @@ I found the [solution](http://stackoverflow.com/questions/14271624/disable-vimpe
 In short, adds to  `~/.vimperatorrc`
 
 ```
+autocmd LocationChange .*                        js modes.passAllKeys = false
 autocmd LocationChange address\\.certain\\.site  js.modes.passAllKeys = true
 ```
