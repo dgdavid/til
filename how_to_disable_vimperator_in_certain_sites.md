@@ -1,5 +1,9 @@
-I needed to disable vimperator in certain sites, as for example in my email web client.
+I needed to disable [Vimperator](http://www.vimperator.org/vimperator) in certain sites, as for example in my email web client.
 
-I found the solution in stackoverflow :D
+I found the [solution](http://stackoverflow.com/questions/14271624/disable-vimperator-temporarily) in StackOverflow :D
 
-http://stackoverflow.com/questions/14271624/disable-vimperator-temporarily
+In short, adds to  `~/.vimperatorrc`
+
+```
+autocmd LocationChange address\\.certain\\.site  js.modes.passAllKeys = true
+```
